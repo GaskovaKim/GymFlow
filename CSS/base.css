@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-color: rgb(80, 80, 80);
+  color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+nav a {
+  display: flex;
+  align-items: center;   /* ikonka a text budou ve stejné výšce */
+  gap: 8px;              /* mezera mezi ikonou a textem */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 0;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff4d4d;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;     /* velikost ikonky */
+  position: relative; 
+  top: 2px;            /* posune ikonku o 2px dolů */
+  right: 4px;
+}

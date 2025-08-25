@@ -1,0 +1,41 @@
+.header {
+  background-image: url("../Images/header-bg.jpg");
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 1fr auto 1fr; /* 3 části: vlevo - střed - vpravo */
+  align-items: center;
+  position: relative;
+  padding: 50px;
+}
+
+.logo {
+  font-family: "Russo One", sans-serif;
+  font-size: 5em;
+  margin: 0;
+  color: white;
+  text-align: center; /* logo vycentrované */
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 280px; /* rezervované místo na všechna tlačítka */
+}
+
+.top-btn {
+  margin-left: 10px; /* mezera mezi tlačítky */
+  font-size: 1.1em;   /* větší písmo pro tlačítko */
+  padding: 12px 24px;
+  background: #424242;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.top-btn:hover {
+  background: #333333;
+}

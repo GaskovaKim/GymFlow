@@ -1,0 +1,60 @@
+.sidebar {
+  width: 250px;
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+}
+
+.sidebar a {
+  display: block; /* odkazy zůstávají pod sebou */
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.6em;   /* zvětšení písma */
+  margin: 20px 0;  
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.sidebar a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* vzdálenost čárky od textu */
+  left: 0;
+  width: 10px; /* malá čárka */
+  height: 2px;
+  background-color: #ccc;
+  transition: width 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: white; /* zesvětlení textu při hoveru */
+}
+
+.sidebar a:hover::after {
+  width: 100%; /* čárka se roztáhne po celé délce textu */
+}
+
+/* Dropdown */
+.sidebar .dropdown {
+  position: relative; /* pro správné umístění podmenu */
+}
+
+.sidebar .submenu {
+  display: none;
+  padding-left: 15px; /* odsazení položek podmenu */
+  background-color: #222; /* tmavé pozadí stejné jako sidebar */
+}
+
+.sidebar .submenu a {
+  color: #ccc; /* barva textu podmenu */
+  margin: 8px 0; /* mezery mezi položkami */
+}
+
+.sidebar .submenu a:hover {
+  color: white; /* zvýraznění při hoveru */
+}
+
+/* Zobrazí podmenu jen při najetí myší */
+.sidebar .dropdown:hover .submenu {
+  display: block;
+}

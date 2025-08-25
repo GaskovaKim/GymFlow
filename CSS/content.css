@@ -1,0 +1,71 @@
+.main-layout {
+  flex: 1;
+  display: flex;
+}
+
+.content {
+  flex: 1;                
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* vertikálně */
+  align-items: center;    /* horizontálně vycentrované */
+}
+
+.page-content {
+  max-width: 1200px;      
+  margin: 0 auto;         
+  padding: 20px;          
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* zarovnání textu k levému okraji */
+}
+
+.page-content.hidden {
+  display: none;
+}
+
+.page-content h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin: 20px 0 30px 0;
+  color: #fff;
+  width: 100%;
+}
+
+.page-content h2 {
+  font-family: "Russo One", sans-serif;
+  font-size: 2.7em;
+  text-align: center;
+  margin: 20px 0 30px 0;
+  color: #fff;
+  width: 100%;
+}
+
+.page-content p {
+  font-size: 1.2em;       
+  line-height: 1.6;
+  color: #f0f0f0;
+  max-width: 800px;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.page-content li {
+  font-size: 3em;
+  line-height: 1.6;
+  color: #f0f0f0;
+  max-width: 800px;
+  text-align: center;
+}
+
+.exercise {
+  margin-bottom: 40px; /* vzdálenost mezi cviky */
+}
+
+.exercise-image {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 10px auto 20px auto;
+}
